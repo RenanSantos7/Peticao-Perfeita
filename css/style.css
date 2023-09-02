@@ -1,0 +1,73 @@
+:root {
+    --bg-main: #010101;
+    --texto: #fafafa;
+    --border: 1px solid #402a9138;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(60deg, rgba(0,29,104,1) 0%, rgba(1,193,243,1) 100%);
+    background-size: 100% 100%;
+    color: var(--texto);
+    
+    padding: 4rem;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    line-height: .9;
+    margin-bottom: 1em;
+}
+
+h1 .menor {
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    font-weight: 400;
+}
+
+h1 .maior {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-left: -0.1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    
+    width: 500px;
+    margin-inline: auto;
+    padding: 1.5em;
+    border: var(--border);
+    border-radius: 18px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+form p, form input {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+form input::placeholder {
+    font-family: 'Lato', sans-serif;
+    color: var(--texto);
+    filter: opacity(.75);
+}
+
+form input {
+    background-color: rgba(68, 97, 160, 0.418);
+    padding: .5em;
+    border-radius: 12px;
+    border: var(--border);
+    width: 100%;
+}
+
+form input[type="submit"] {
+    align-self: flex-end;
+    width: 100px;
+    background-color: #01baed;
+    color: #001f6a;
+    font-weight: 700;
+    margin-top: 1.25em;
+}
